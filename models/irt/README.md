@@ -3,14 +3,14 @@ IRT
 
 ## 1PL
 
- - [1pl.R](../blob/master/models/irt/1pl.R)
- - [1pl.stan](../blob/master/models/ir/1pl.stan)
+ - [1pl.R](./1pl.R)
+ - [1pl.stan](./pl.stan)
 
 
 ### Data
 
 Simulated using 1PL IRT model:
-- [irt-1pl-1000(1)x20.R](../blob/master/data/irt-1pl-1000(1)x20.R)
+- [irt-1pl-1000(1)x20.R](../../data/irt-1pl-1000(1)x20.R)
 
 
 ### Model
@@ -33,19 +33,20 @@ MCMC settings:
  - Thinning: 1
 
 MCMC diagnostics:
- - [plot_1pl_abilit_rhat-geweke.pdf](../blob/master/output/irt/plot_1pl_abilit_rhat-geweke.pdf)
- - [plot_1pl_abilit_autocorrelation-crosscorrelation.pdf](../blob/master/output/irt/plot_1pl_abilit_autocorrelation-crosscorrelation.pdf)
- - [plot_1pl_abilit_traceplot-running-compare-partial.pdf](../blob/master/output/irt/plot_1pl_abilit_traceplot-running-compare-partial.pdf)
- - [plot_1pl_abilit_density-caterpillar.pdf](../blob/master/output/irt/plot_1pl_abilit_density-caterpillar.pdf)
- - [plot_1pl_difficult_rhat-geweke.pdf](../blob/master/output/irt/plot_1pl_difficult_rhat-geweke.pdf)
- - [plot_1pl_difficult_autocorrelation-crosscorrelation.pdf](../blob/master/output/irt/plot_1pl_difficult_autocorrelation-crosscorrelation.pdf)
- - [plot_1pl_difficult_traceplot-running-compare-partial.pdf](../blob/master/output/irt/plot_1pl_difficult_traceplot-running-compare-partial.pdf)
- - [plot_1pl_difficult_density-caterpillar.pdf](../blob/master/output/irt/plot_1pl_difficult_density-caterpillar.pdf)
+ - [plot_1pl_abilit_rhat-geweke.pdf](../../output/irt/plot_1pl_abilit_rhat-geweke.pdf)
+ - [plot_1pl_abilit_autocorrelation-crosscorrelation.pdf](../../output/irt/plot_1pl_abilit_autocorrelation-crosscorrelation.pdf)
+ - [plot_1pl_abilit_traceplot-running-compare-partial.pdf](../../output/irt/plot_1pl_abilit_traceplot-running-compare-partial.pdf)
+ - [plot_1pl_abilit_density-caterpillar.pdf](../../output/irt/plot_1pl_abilit_density-caterpillar.pdf)
+ - [plot_1pl_difficult_rhat-geweke.pdf](../../output/irt/plot_1pl_difficult_rhat-geweke.pdf)
+ - [plot_1pl_difficult_autocorrelation-crosscorrelation.pdf](../../output/irt/plot_1pl_difficult_autocorrelation-crosscorrelation.pdf)
+ - [plot_1pl_difficult_traceplot-running-compare-partial.pdf](../../output/irt/plot_1pl_difficult_traceplot-running-compare-partial.pdf)
+ - [plot_1pl_difficult_density-caterpillar.pdf](../../output/irt/plot_1pl_difficult_density-caterpillar.pdf)
 
 
 ### Results
 
 Difficulty parameter values:
+
 |` parameter      `|` value   `|` true value `|` difference `|
 |------------------|----------:|-------------:|-------------:|
 |` difficulty[1]  `|` -0.818  `|` -0.863     `|`  0.044     `|
@@ -70,6 +71,7 @@ Difficulty parameter values:
 |` difficulty[20] `|` -0.488  `|` -0.477     `|` -0.011     `|
 
 Ability parameter values (only the first twenty):
+
 |` parameter     `|` value   `|` true value `|` difference `|
 |-----------------|----------:|-------------:|-------------:|
 |` ability[1]    `|`  0.410  `|`  0.720     `|` -0.309     `|
@@ -101,14 +103,14 @@ Mean of absolute values of differences between estimated and true value:
 
 ## 2PL
 
- - [2pl.R](../blob/master/models/irt/2pl.R)
- - [2pl.stan](../blob/master/models/ir/2pl.stan)
+ - [2pl.R](./2pl.R)
+ - [2pl.stan](./pl.stan)
 
 
 ### Data
 
 Simulated using 2PL MIRT model:
-- [irt-2pl-1000(10)x20.R](../blob/master/data/irt-2pl-1000(10)x20.R)
+- [irt-2pl-1000(10)x20.R](../../data/irt-2pl-1000(10)x20.R)
 
 
 ### Model
@@ -133,23 +135,24 @@ MCMC settings:
  - Thinning: 2
 
 MCMC diagnostics:
- - [plot_2pl_discrimination_rhat-geweke.pdf](../blob/master/output/irt/plot_2pl_discrimination_rhat-geweke.pdf)
- - [plot_2pl_discrimination_autocorrelation-crosscorrelation.pdf](../blob/master/output/irt/plot_2pl_discrimination_autocorrelation-crosscorrelation.pdf)
- - [plot_2pl_discrimination_traceplot-running-compare-partial.pdf](../blob/master/output/irt/plot_2pl_discrimination_traceplot-running-compare-partial.pdf)
- - [plot_2pl_discrimination_density-caterpillar.pdf](../blob/master/output/irt/plot_2pl_discrimination_density-caterpillar.pdf)
- - [plot_2pl_abilit_rhat-geweke.pdf](../blob/master/output/irt/plot_2pl_abilit_rhat-geweke.pdf)
- - [plot_2pl_abilit_autocorrelation-crosscorrelation.pdf](../blob/master/output/irt/plot_2pl_abilit_autocorrelation-crosscorrelation.pdf)
- - [plot_2pl_abilit_traceplot-running-compare-partial.pdf](../blob/master/output/irt/plot_2pl_abilit_traceplot-running-compare-partial.pdf)
- - [plot_2pl_abilit_density-caterpillar.pdf](../blob/master/output/irt/plot_2pl_abilit_density-caterpillar.pdf)
- - [plot_2pl_difficult_rhat-geweke.pdf](../blob/master/output/irt/plot_2pl_difficult_rhat-geweke.pdf)
- - [plot_2pl_difficult_autocorrelation-crosscorrelation.pdf](../blob/master/output/irt/plot_2pl_difficult_autocorrelation-crosscorrelation.pdf)
- - [plot_2pl_difficult_traceplot-running-compare-partial.pdf](../blob/master/output/irt/plot_2pl_difficult_traceplot-running-compare-partial.pdf)
- - [plot_2pl_difficult_density-caterpillar.pdf](../blob/master/output/irt/plot_2pl_difficult_density-caterpillar.pdf)
+ - [plot_2pl_discrimination_rhat-geweke.pdf](../../output/irt/plot_2pl_discrimination_rhat-geweke.pdf)
+ - [plot_2pl_discrimination_autocorrelation-crosscorrelation.pdf](../../output/irt/plot_2pl_discrimination_autocorrelation-crosscorrelation.pdf)
+ - [plot_2pl_discrimination_traceplot-running-compare-partial.pdf](../../output/irt/plot_2pl_discrimination_traceplot-running-compare-partial.pdf)
+ - [plot_2pl_discrimination_density-caterpillar.pdf](../../output/irt/plot_2pl_discrimination_density-caterpillar.pdf)
+ - [plot_2pl_abilit_rhat-geweke.pdf](../../output/irt/plot_2pl_abilit_rhat-geweke.pdf)
+ - [plot_2pl_abilit_autocorrelation-crosscorrelation.pdf](../../output/irt/plot_2pl_abilit_autocorrelation-crosscorrelation.pdf)
+ - [plot_2pl_abilit_traceplot-running-compare-partial.pdf](../../output/irt/plot_2pl_abilit_traceplot-running-compare-partial.pdf)
+ - [plot_2pl_abilit_density-caterpillar.pdf](../../output/irt/plot_2pl_abilit_density-caterpillar.pdf)
+ - [plot_2pl_difficult_rhat-geweke.pdf](../../output/irt/plot_2pl_difficult_rhat-geweke.pdf)
+ - [plot_2pl_difficult_autocorrelation-crosscorrelation.pdf](../../output/irt/plot_2pl_difficult_autocorrelation-crosscorrelation.pdf)
+ - [plot_2pl_difficult_traceplot-running-compare-partial.pdf](../../output/irt/plot_2pl_difficult_traceplot-running-compare-partial.pdf)
+ - [plot_2pl_difficult_density-caterpillar.pdf](../../output/irt/plot_2pl_difficult_density-caterpillar.pdf)
 
 
 ### Results
 
 Difficulty parameter values:
+
 |` parameter      `|` value   `|` true value `|` difference `|
 |------------------|----------:|-------------:|-------------:|
 |` difficulty[1]  `|` -0.907  `|` -0.762     `|` -0.144     `|
@@ -174,6 +177,7 @@ Difficulty parameter values:
 |` difficulty[20] `|` -0.451  `|` -0.754     `|`  0.303     `|
 
 Discrimination parameter values:
+
 |` parameter          `|` value   `|` true value `|` difference `|
 |----------------------|----------:|-------------:|-------------:|
 |` discrimination[1]  `|` 0.749   `|` 0.686      `|`  0.062     `|
@@ -198,6 +202,7 @@ Discrimination parameter values:
 |` discrimination[20] `|` 1.634   `|` 1.600      `|`  0.033     `|
 
 Ability parameter values (only the first twenty):
+
 |` parameter     `|` value   `|` true value `|` difference `|
 |-----------------|----------:|-------------:|-------------:|
 |` ability[1]    `|` -0.172  `|` -0.072     `|` -0.099     `|
@@ -232,14 +237,14 @@ Mean of absolute values of differences between estimated and true value with gre
 
 ## 2PN
 
- - [2pn.R](../blob/master/models/irt/2pn.R)
- - [2pn.stan](../blob/master/models/ir/2pn.stan)
+ - [2pn.R](./2pn.R)
+ - [2pn.stan](./2pn.stan)
 
 
 ### Data
 
 Simulated using 2PL MIRT model:
-- [irt-2pl-1000(10)x20.R](../blob/master/data/irt-2pl-1000(10)x20.R)
+- [irt-2pl-1000(10)x20.R](../../data/irt-2pl-1000(10)x20.R)
 
 
 ### Model
@@ -264,23 +269,24 @@ MCMC settings:
  - Thinning: 2
 
 MCMC diagnostics:
- - [plot_2pn_discrimination_rhat-geweke.pdf](../blob/master/output/irt/plot_2pn_discrimination_rhat-geweke.pdf)
- - [plot_2pn_discrimination_autocorrelation-crosscorrelation.pdf](../blob/master/output/irt/plot_2pn_discrimination_autocorrelation-crosscorrelation.pdf)
- - [plot_2pn_discrimination_traceplot-running-compare-partial.pdf](../blob/master/output/irt/plot_2pn_discrimination_traceplot-running-compare-partial.pdf)
- - [plot_2pn_discrimination_density-caterpillar.pdf](../blob/master/output/irt/plot_2pn_discrimination_density-caterpillar.pdf)
- - [plot_2pn_abilit_rhat-geweke.pdf](../blob/master/output/irt/plot_2pn_abilit_rhat-geweke.pdf)
- - [plot_2pn_abilit_autocorrelation-crosscorrelation.pdf](../blob/master/output/irt/plot_2pn_abilit_autocorrelation-crosscorrelation.pdf)
- - [plot_2pn_abilit_traceplot-running-compare-partial.pdf](../blob/master/output/irt/plot_2pn_abilit_traceplot-running-compare-partial.pdf)
- - [plot_2pn_abilit_density-caterpillar.pdf](../blob/master/output/irt/plot_2pn_abilit_density-caterpillar.pdf)
- - [plot_2pn_difficult_rhat-geweke.pdf](../blob/master/output/irt/plot_2pn_difficult_rhat-geweke.pdf)
- - [plot_2pn_difficult_autocorrelation-crosscorrelation.pdf](../blob/master/output/irt/plot_2pn_difficult_autocorrelation-crosscorrelation.pdf)
- - [plot_2pn_difficult_traceplot-running-compare-partial.pdf](../blob/master/output/irt/plot_2pn_difficult_traceplot-running-compare-partial.pdf)
- - [plot_2pn_difficult_density-caterpillar.pdf](../blob/master/output/irt/plot_2pn_difficult_density-caterpillar.pdf)
+ - [plot_2pn_discrimination_rhat-geweke.pdf](../../output/irt/plot_2pn_discrimination_rhat-geweke.pdf)
+ - [plot_2pn_discrimination_autocorrelation-crosscorrelation.pdf](../../output/irt/plot_2pn_discrimination_autocorrelation-crosscorrelation.pdf)
+ - [plot_2pn_discrimination_traceplot-running-compare-partial.pdf](../../output/irt/plot_2pn_discrimination_traceplot-running-compare-partial.pdf)
+ - [plot_2pn_discrimination_density-caterpillar.pdf](../../output/irt/plot_2pn_discrimination_density-caterpillar.pdf)
+ - [plot_2pn_abilit_rhat-geweke.pdf](../../output/irt/plot_2pn_abilit_rhat-geweke.pdf)
+ - [plot_2pn_abilit_autocorrelation-crosscorrelation.pdf](../../output/irt/plot_2pn_abilit_autocorrelation-crosscorrelation.pdf)
+ - [plot_2pn_abilit_traceplot-running-compare-partial.pdf](../../output/irt/plot_2pn_abilit_traceplot-running-compare-partial.pdf)
+ - [plot_2pn_abilit_density-caterpillar.pdf](../../output/irt/plot_2pn_abilit_density-caterpillar.pdf)
+ - [plot_2pn_difficult_rhat-geweke.pdf](../../output/irt/plot_2pn_difficult_rhat-geweke.pdf)
+ - [plot_2pn_difficult_autocorrelation-crosscorrelation.pdf](../../output/irt/plot_2pn_difficult_autocorrelation-crosscorrelation.pdf)
+ - [plot_2pn_difficult_traceplot-running-compare-partial.pdf](../../output/irt/plot_2pn_difficult_traceplot-running-compare-partial.pdf)
+ - [plot_2pn_difficult_density-caterpillar.pdf](../../output/irt/plot_2pn_difficult_density-caterpillar.pdf)
 
 ### Results
 
 
 Difficulty parameter values:
+
 |` parameter      `|` value   `|` true value `|` difference `|
 |------------------|----------:|-------------:|-------------:|
 |` difficulty[1]  `|` -0.910  `|` -0.762     `|` -0.147     `|
@@ -305,6 +311,7 @@ Difficulty parameter values:
 |` difficulty[20] `|` -0.448  `|` -0.754     `|`  0.306     `|
 
 Discrimination parameter values:
+
 |` parameter          `|` value   `|` true value `|` difference `|
 |----------------------|----------:|-------------:|-------------:|
 |` discrimination[1]  `|` 0.457   `|` 0.686      `|` -0.229     `|
@@ -329,6 +336,7 @@ Discrimination parameter values:
 |` discrimination[20] `|` 0.963   `|` 1.600      `|` -0.637     `|
 
 Ability parameter values (only the first twenty):
+
 |` parameter     `|` value   `|` true value `|` difference `|
 |-----------------|----------:|-------------:|-------------:|
 |` ability[1]    `|` -0.175  `|` -0.072     `|` -0.103     `|
@@ -362,6 +370,7 @@ Mean of absolute values of differences between estimated and true value with gre
 ### Comparison with 2PL model
 
 Difficulty parameter values:
+
 |` parameter      `|` 2PN     `|` 2PL        `|
 |------------------|----------:|-------------:|
 |` difficulty[1]  `|` -0.910  `|` -0.907     `|
@@ -386,6 +395,7 @@ Difficulty parameter values:
 |` difficulty[20] `|` -0.448  `|` -0.451     `|
 
 Discrimination parameter values:
+
 |` parameter          `|` 2PN     `|` 2PL        `|
 |----------------------|----------:|-------------:|
 |` discrimination[1]  `|` 0.457   `|` 0.749      `|
@@ -410,6 +420,7 @@ Discrimination parameter values:
 |` discrimination[20] `|` 0.963   `|` 1.634      `|
 
 Ability parameter values (only the first twenty):
+
 |` parameter     `|` 2PN     `|` 2PL        `|
 |-----------------|----------:|-------------:|
 |` ability[1]    `|` -0.175  `|` -0.172     `|

@@ -1,10 +1,10 @@
 ACM axioms test for the Rasch model
 ===================================
 
- - [acm-rash-perline-data.R](../blobl/master/models/acm-rasch/acm-rash-perline-data.R)
- - [acm-rash-simulated-data-1.R](../blobl/master/models/acm-rasch/acm-rash-simulated-data-1.R)
- - [acm-rash-simulated-data-2.R](../blobl/master/models/acm-rasch/acm-rash-simulated-data-2.R)
- - [acm-rash-simulated-data-3.R](../blobl/master/models/acm-rasch/acm-rash-simulated-data-3.R)
+ - [acm-rash-perline-data.R](./acm-rash-perline-data.R)
+ - [acm-rash-simulated-data-1.R](./acm-rash-simulated-data-1.R)
+ - [acm-rash-simulated-data-2.R](./acm-rash-simulated-data-2.R)
+ - [acm-rash-simulated-data-3.R](./acm-rash-simulated-data-3.R)
 
 ## Sources
 
@@ -15,9 +15,9 @@ Kyngdon, A. (2011). Plausible measurement analogies to some psychometric models 
 ## Data
 
 Simulated using (M)IRT models:
-- [irt-1pl-1000(1)x20.R](../blob/master/data/irt-1pl-1000(1)x20.R)
-- [irt-2pl-1000(10)x20.R](../blob/master/data/irt-2pl-1000(10)x20.R)
-- [irt-2pl-1000(10)x20.R](../blob/master/data/irt-2pl-1000(10)x20.R)
+- [irt-1pl-1000(1)x20.R](../../data/irt-1pl-1000(1)x20.R)
+- [irt-2pl-1000(10)x20.R](../../data/irt-2pl-1000(10)x20.R)
+- [irt-2pl-1000(10)x20.R](../../data/irt-2pl-1000(10)x20.R)
 
 Data from Perline, R., Wright, B. D., & Wainer, H. (1979). The Rasch model as additive conjoint measurement. Applied Psychological Measurement, 3(2), 237-255.
 
@@ -27,6 +27,7 @@ Data from Perline, R., Wright, B. D., & Wainer, H. (1979). The Rasch model as ad
 Items a persons are arranged into a table based on their score of correct responses.
 
 Correct responses:
+
 |                                   |` 1 (Most difficult items) `|` 2  `|` 3  `|` 4  `|` 5  `|` 6  `|` 7  `|` 8  `|` 9  `|
 |-----------------------------------|---------------------------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |` 1 (Persons with lowest ability) `|`  0                       `|`  0 `|`  0 `|`  0 `|`  0 `|`  0 `|`  4 `|`  0 `|` 11 `|
@@ -40,6 +41,7 @@ Correct responses:
 |` 9                               `|`  8                       `|`  8 `|`  8 `|`  8 `|`  8 `|`  8 `|`  8 `|`  8 `|`  8 `|
            
 Total responses:
+
 |                                   |` 1 (Most difficult items) `|` 2  `|` 3  `|` 4  `|` 5  `|` 6  `|` 7  `|` 8  `|` 9  `|
 |-----------------------------------|---------------------------:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 |` 1 (Persons with lowest ability) `|` 15                       `|` 15 `|` 15 `|` 15 `|` 15 `|` 15 `|` 15 `|` 15 `|` 15 `|
@@ -53,6 +55,7 @@ Total responses:
 |` 9                               `|`  8                       `|`  8 `|`  8 `|`  8 `|`  8 `|`  8 `|`  8 `|`  8 `|`  8 `|
 
 Proportions of the correct responses:
+
 |                                   |` 1 (Most difficult items) `|` 2     `|` 3     `|` 4     `|` 5     `|` 6     `|` 7     `|` 8     `|` 9     `|
 |-----------------------------------|---------------------------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|
 |` 1 (Persons with lowest ability) `|` 0.000                    `|` 0.000 `|` 0.000 `|` 0.000 `|` 0.000 `|` 0.000 `|` 0.266 `|` 0.000 `|` 0.733 `|
@@ -82,6 +85,7 @@ To obtain estimates of true proportions, bayesian methods can be applied, using 
 ### Example for [6:8, 1:3] 3x3 submatrix
 
 Empirical proportions:
+
 |            |` 1     `|` 2     `|` 3      `|
 |------------|---------|---------|----------|
 |` 6        `|` 0.127 `|` 0.279 `|` 0.639  `|
@@ -89,6 +93,7 @@ Empirical proportions:
 |` 8        `|` 0.170 `|` 0.851 `|` 1.000  `|
 
 Estimated proportions with 95% hdi:
+
 |            |` 1                      `|` 2                      `|` 3                     `|
 |------------|--------------------------|--------------------------|-------------------------|
 |` 6        `|` 0.067 - 0.117 - 0.170  `|` 0.196 - 0.282 - 0.369  `|` 0.538 - 0.633 - 0.729 `|
@@ -96,6 +101,7 @@ Estimated proportions with 95% hdi:
 |` 8        `|` 0.131 - 0.219 - 0.303  `|` 0.725 - 0.839 - 0.926  `|` 1.000 - 1.000 - 1.000 `|
 
 Total test / failed tests:
+
 |            |` 1     `|` 2     `|` 3      `|
 |------------|---------|---------|----------|
 |` 6        `|` 1 / 0 `|` 1 / 0 `|` 1 / 0  `|

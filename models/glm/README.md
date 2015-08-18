@@ -3,8 +3,8 @@ GLM
 
 ## MOT
 
- - [mot.R](../blob/master/models/glm/mot.R)
- - [mot.stan](../blob/master/models/glm/mot.stan)
+ - [mot.R](./mot.R)
+ - [mot.stan](./mot.stan)
 
 
 ### Data
@@ -47,16 +47,17 @@ MCMC settings:
  - Thinning: 2
 
 MCMC diagnostics:
- - [alphaSubject.pdf](../blob/master/output/glm/ggmcmc-plot_glm-mot_alphaSubject.pdf)
- - [betaCanvasSize.pdf](../blob/master/output/glm/ggmcmc-plot_glm-mot_betaCanvasSize.pdf)
- - [betaNTargets.pdf](../blob/master/output/glm/ggmcmc-plot_glm-mot_betaNTargets.pdf)
- - [betaNTargetsAndSaliencyRatio.pdf](../blob/master/output/glm/ggmcmc-plot_glm-mot_betaNTargetsAndSaliencyRatio.pdf)
- - [betaSaliencyRatio.pdf](../blob/master/output/glm/ggmcmc-plot_glm-mot_betaSaliencyRatio.pdf)
+ - [alphaSubject.pdf](../../output/glm/ggmcmc-plot_glm-mot_alphaSubject.pdf)
+ - [betaCanvasSize.pdf](../../output/glm/ggmcmc-plot_glm-mot_betaCanvasSize.pdf)
+ - [betaNTargets.pdf](../../output/glm/ggmcmc-plot_glm-mot_betaNTargets.pdf)
+ - [betaNTargetsAndSaliencyRatio.pdf](../../output/glm/ggmcmc-plot_glm-mot_betaNTargetsAndSaliencyRatio.pdf)
+ - [betaSaliencyRatio.pdf](../../output/glm/ggmcmc-plot_glm-mot_betaSaliencyRatio.pdf)
 
 
 ### Results
 
 Parameter values:
+
 |` parameter                    `|` mean   `|` 95 % hdi    `|` 95 % hdi    `|` exp      `|` 95 % hdi    `|` 95 % hdi    `|
 |--------------------------------|---------:|--------------:|--------------:|-----------:|--------------:|--------------:|
 |` betaNTargets                 `|` -2.624 `|` -2.980      `|` -2.234      `|`    0.073 `|`    0.051    `|`     0.107   `|
@@ -65,6 +66,7 @@ Parameter values:
 |` betaNTargetsAndSaliencyRatio `|` -0.008 `|` -0.062      `|`  0.044      `|`    0.992 `|`    0.940    `|`     1.045   `|
 
 Parameters values summary:
+
 |` parameter    `|` mean  `|` sd    `|
 |----------------|---------|---------|
 |` alphaSubject `|` 1.010 `|` 3.275 `|
@@ -73,6 +75,7 @@ Parameters values summary:
 ### Comparison with classical binomial logit mixed-model
 
 Parameter values:
+
 |` parameter                     `|` coefficient `|` exp     `|` 95 % confidence interval `|` 95 % confidence interval `|
 |---------------------------------|--------------:|----------:|---------------------------:|---------------------------:|
 |` intercept                     `|`  6.445      `|` 629.568 `|` 308.551                  `|` 1284.572                 `|

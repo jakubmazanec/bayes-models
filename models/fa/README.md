@@ -3,8 +3,8 @@ FA
 
 ## EFA
 
- - [efa.R](../blob/master/models/fa/efa.R)
- - [efa.stan](../blob/master/models/fa/efa.stan)
+ - [efa.R](./efa.R)
+ - [efa.stan](./efa.stan)
 
 
 ### Data
@@ -32,27 +32,28 @@ MCMC settings:
  - Thinning: 1
 
 MCMC diagnostics:
- - [plot_fa_errorVariance_autocorrelation-crosscorrelation.pdf](../blob/master/output/fa/plot_fa_errorVariance_autocorrelation-crosscorrelation.pdf)
- - [plot_fa_errorVariance_density-caterpillar.pdf](../blob/master/output/fa/plot_fa_errorVariance_density-caterpillar.pdf)
- - [plot_fa_errorVariance_rhat-geweke.pdf](../blob/master/output/fa/plot_fa_errorVariance_rhat-geweke.pdf)
- - [plot_fa_errorVariance_traceplot-running-compare-partial.pdf](../blob/master/output/fa/plot_fa_errorVariance_traceplot-running-compare-partial.pdf)
- - [plot_fa_factorLoading_autocorrelation-crosscorrelation.pdf](../blob/master/output/fa/plot_fa_factorLoading_autocorrelation-crosscorrelation.pdf)
- - [plot_fa_factorLoading_density-caterpillar.pdf](../blob/master/output/fa/plot_fa_factorLoading_density-caterpillar.pdf)
- - [plot_fa_factorLoading_rhat-geweke.pdf](../blob/master/output/fa/plot_fa_factorLoading_rhat-geweke.pdf)
- - [plot_fa_factorLoading_traceplot-running-compare-partial.pdf](../blob/master/output/fa/plot_fa_factorLoading_traceplot-running-compare-partial.pdf)
- - [plot_fa_factorScore_autocorrelation-crosscorrelation.pdf](../blob/master/output/fa/plot_fa_factorScore_autocorrelation-crosscorrelation.pdf)
- - [plot_fa_factorScore_density-caterpillar.pdf](../blob/master/output/fa/plot_fa_factorScore_density-caterpillar.pdf)
- - [plot_fa_factorScore_rhat-geweke.pdf](../blob/master/output/fa/plot_fa_factorScore_rhat-geweke.pdf)
- - [plot_fa_factorScore_traceplot-running-compare-partial.pdf](../blob/master/output/fa/plot_fa_factorScore_traceplot-running-compare-partial.pdf)
- - [plot_fa_intercept_autocorrelation-crosscorrelation.pdf](../blob/master/output/fa/plot_fa_intercept_autocorrelation-crosscorrelation.pdf)
- - [plot_fa_intercept_density-caterpillar.pdf](../blob/master/output/fa/plot_fa_intercept_density-caterpillar.pdf)
- - [plot_fa_intercept_rhat-geweke.pdf](../blob/master/output/fa/plot_fa_intercept_rhat-geweke.pdf)
- - [plot_fa_intercept_traceplot-running-compare-partial.pdf](../blob/master/output/fa/plot_fa_intercept_traceplot-running-compare-partial.pdf)
+ - [plot_fa_errorVariance_autocorrelation-crosscorrelation.pdf](../../output/fa/plot_fa_errorVariance_autocorrelation-crosscorrelation.pdf)
+ - [plot_fa_errorVariance_density-caterpillar.pdf](../../output/fa/plot_fa_errorVariance_density-caterpillar.pdf)
+ - [plot_fa_errorVariance_rhat-geweke.pdf](../../output/fa/plot_fa_errorVariance_rhat-geweke.pdf)
+ - [plot_fa_errorVariance_traceplot-running-compare-partial.pdf](../../output/fa/plot_fa_errorVariance_traceplot-running-compare-partial.pdf)
+ - [plot_fa_factorLoading_autocorrelation-crosscorrelation.pdf](../../output/fa/plot_fa_factorLoading_autocorrelation-crosscorrelation.pdf)
+ - [plot_fa_factorLoading_density-caterpillar.pdf](../../output/fa/plot_fa_factorLoading_density-caterpillar.pdf)
+ - [plot_fa_factorLoading_rhat-geweke.pdf](../../output/fa/plot_fa_factorLoading_rhat-geweke.pdf)
+ - [plot_fa_factorLoading_traceplot-running-compare-partial.pdf](../../output/fa/plot_fa_factorLoading_traceplot-running-compare-partial.pdf)
+ - [plot_fa_factorScore_autocorrelation-crosscorrelation.pdf](../../output/fa/plot_fa_factorScore_autocorrelation-crosscorrelation.pdf)
+ - [plot_fa_factorScore_density-caterpillar.pdf](../../output/fa/plot_fa_factorScore_density-caterpillar.pdf)
+ - [plot_fa_factorScore_rhat-geweke.pdf](../../output/fa/plot_fa_factorScore_rhat-geweke.pdf)
+ - [plot_fa_factorScore_traceplot-running-compare-partial.pdf](../../output/fa/plot_fa_factorScore_traceplot-running-compare-partial.pdf)
+ - [plot_fa_intercept_autocorrelation-crosscorrelation.pdf](../../output/fa/plot_fa_intercept_autocorrelation-crosscorrelation.pdf)
+ - [plot_fa_intercept_density-caterpillar.pdf](../../output/fa/plot_fa_intercept_density-caterpillar.pdf)
+ - [plot_fa_intercept_rhat-geweke.pdf](../../output/fa/plot_fa_intercept_rhat-geweke.pdf)
+ - [plot_fa_intercept_traceplot-running-compare-partial.pdf](../../output/fa/plot_fa_intercept_traceplot-running-compare-partial.pdf)
 
 
 ### Results
 
 Parameter values:
+
 |` parameter          `|` mean (factor 1) `|` 95% hdi (factor 1)  `|` mean (factor 2) `|` 95% hdi (factor 2)  `|
 |----------------------|------------------:|----------------------:|----------------------:|------------------:|
 |` factorLoading[1,]  `|` 0.396           `|` 0.329 - 0.463       `|` 0.034           `|` 0.000 - 0.082       `|
@@ -79,7 +80,7 @@ Parameter values:
 
 ### Comparison with classical factor analysis
 
-#### Rotated Factor Matrix
+Rotated Factor Matrix:
 
 |` Item `|` Factor 1 `|` Factor 2 `|
 |--------|-----------:|-----------:|
@@ -104,7 +105,7 @@ Parameter values:
 |` 19   `|`  0,553   `|`  0,224   `|
 |` 20   `|`  0,564   `|`  0,076   `|
 
-#### Comparison
+Comparison:
 
 |` Item `|` Factor 1 `|` Factor 2 `|` Factor 1 (bayes) `|` Factor 2 (bayes) `|
 |--------|-----------:|-----------:|-------------------:|-------------------:|
