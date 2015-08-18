@@ -19,7 +19,8 @@ Simulated using (M)IRT models:
 - [irt-2pl-1000(10)x20.R](../../data/irt-2pl-1000(10)x20.R)
 - [irt-2pl-1000(10)x20.R](../../data/irt-2pl-1000(10)x20.R)
 
-Data from Perline, R., Wright, B. D., & Wainer, H. (1979). The Rasch model as additive conjoint measurement. Applied Psychological Measurement, 3(2), 237-255.
+And data from:
+ - Perline, R., Wright, B. D., & Wainer, H. (1979). The Rasch model as additive conjoint measurement. Applied Psychological Measurement, 3(2), 237-255.
 
 
 ## Example using Perline data
